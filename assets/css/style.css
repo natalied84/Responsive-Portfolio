@@ -110,7 +110,8 @@ footer {
   height: 50px;
 }
 
-h3, h2 {
+h3,
+h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
@@ -214,4 +215,69 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width: 980px) {
+  nav {
+    padding-right: 20px;
+  }
+
+  .main-section {
+    max-width: 650px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .work:nth-child(even) {
+    margin-right: 25px;
+  }
+  .main-section {
+    width: 608px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .work{
+    margin-left: 64px;
+    float: none;
+  }
+
+  #masthead {
+    position: absolute;
+    top: 0;
+    height: 120px;
+    overflow: hidden;
+  }
+
+  #logo {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 80px
+  }
+
+  nav {
+    float: none;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0; 
+  }
+
+  /* I'm not happy with the image on the 640 */
+  .auth-image {
+    float: none;
+   }
+
+  .main-section {
+    max-width: 436px;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 20px
+  }
+
 }
